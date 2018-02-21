@@ -1,0 +1,16 @@
+{
+  "name": "@sedicii/zipkin-instrumentation-wreck",
+  "version": "0.1.0",
+  "description": "Instrumentation for Wreck with Zipkin.js",
+  "main": "lib/index.js",
+  "scripts": {},
+  "author": "Eoin Shanaghy <eoin.shanaghy@fourtheorem.com>",
+  "license": "MIT",
+  "repository": "https://github.com/sedicii/zipkin-instrumentation-wreck",
+  "devDependencies": {
+    "zipkin": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=8.0"
+  }
+}
