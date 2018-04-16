@@ -1,5 +1,5 @@
 {
-  "name": "@sedicii/zipkin-instrumentation-wreck",
+  "name": "zipkin-instrumentation-wreck",
   "version": "1.0.0",
   "description": "Instrumentation for Wreck with Zipkin.js",
   "main": "lib/index.js",
