@@ -15,7 +15,7 @@ npm install --save zipkin-instrumentation-wreck
 ```javascript
 const { wrapWreck } = require('zipkin-instrumentation-wreck')
 
-const Wreck = reuqire('wreck')
+const Wreck = require('wreck')
 
 const wreck = wrapWreck(Wreck, { tracer, serviceName, remoteServiceName })
 
