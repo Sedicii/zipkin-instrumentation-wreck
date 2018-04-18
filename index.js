@@ -24,8 +24,14 @@ function wrapWreck (wreck, { tracer, serviceName, remoteServiceName }) {
           } else {
             [uri, options] = args
           }
-          method = method || (options && options.method) || name
-          args.pop()
+          if (options) {
+            args.pop()
+          } else {
+            options = {}
+          }
+
+          options = options || {}
+          method = method || options.method || name
           return tracer.scoped(function traceScopedWreck () {
             const handleSuccess = response => instrumentation.recordResponse(traceId, `${response ? response.statusCode : ''}`)
             const handleError = err => instrumentation.recordError(traceId, err)
